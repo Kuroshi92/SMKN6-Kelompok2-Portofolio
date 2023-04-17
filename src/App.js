@@ -1,13 +1,15 @@
 import './index.css';
 import gambar1 from "./asset/anikor.png"
+import lgithub from "./asset/logoGitHub.png"
+import ltwitter from "./asset/logoTwitter.png"
 import {data} from "./asset/datadrakor";
 import {data1} from "./asset/dataanime";
 
 function App() {
   
   return (
-    <div className='relative'>
-      <div className='' >
+    <div className='bg-blue-900'>
+      <div>
         <nav class="bg-white border-gray-200 dark:bg-gray-900 h-20 w-full fixed">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="http://localhost:3000/#" class="flex items-center">
@@ -60,6 +62,9 @@ function App() {
         <div className='bg-inherit'>
           <img src={gambar1} className='w-full h-full'></img>
         </div>
+
+        {/* bagian content review drakor */}
+
         <div> 
             <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-2 my-2 rounded      ">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -86,6 +91,9 @@ function App() {
                     </div>
                 </div>
         </div>
+
+        {/* Bagian Content Review Anime */}
+
         <div> 
             <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-2 my-2 rounded      ">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -112,13 +120,33 @@ function App() {
                     </div>
                 </div>
         </div>
+        
+        {/* Bagian Footer */}
+
+    <footer className="bg-gray-900 text-white py-7-">
+        <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
+            <h1 className="lg:text-4x1 text-3x1 md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5">
+            <span className="text-teal-400">P r o j e c t</span> Kelompok 2</h1>
+        </div>
+        
+
+        
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-10 text-center mt-10 pt-2 text-gray-400 text-sm pb-8">
+           <span>© 2023 Appy. All rights reserved.</span>
+           <span>Terms · Privacy Policy</span>
+
+           <div className='flex'>
+           <img src={lgithub} alt='logo-github' className='max-h-10 max-w-10 px-5'></img>
+           <img src={ltwitter} alt='logo-twitter' className='max-h-10 max-w-10' ></img>
+           </div>
+        </div>
+    </footer>
+
       </div>
     </div>
     
     
     
-
-
 
 
 
