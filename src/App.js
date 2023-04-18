@@ -1,147 +1,24 @@
 import './index.css';
-import gambar1 from "./asset/anikor.png"
-import lgithub from "./asset/logoGitHub.png"
-import ltwitter from "./asset/logoTwitter.png"
-import {data} from "./asset/datadrakor";
-import {data1} from "./asset/dataanime";
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Home from './pages/home';
+import Anime from './pages/anime';
+import Drakor from './pages/drakor';
+import Team from './pages/team';
 
 function App() {
   
   return (
     <div className='bg-blue-900'>
       <div>
-        <nav class="bg-white border-gray-200 dark:bg-gray-900 h-20 w-full fixed">
-          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="http://localhost:3000/#" class="flex items-center">
-              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AniKor</span>
-            </a>
-            <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none  hover:bg-gray-900 group">
-              <div class ="w-5 h-1 bg-gray-600 mb-1"></div>
-              <div class ="w-5 h-1 bg-gray-600 mb-1"></div>
-              <div class ="w-5 h-1 bg-gray-600 "></div>
-              <div class="absolute top-5 -right-full h-100 w-6/12 bg-gray-900 text-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
-                <ul class="fkex flex-col items-center w-full text-base cursor-pointer pt-0">  
-                  <li class="hover:bg-zinc-600 py-8 px-6 w-full">Home</li>
-                  <hr class="bg-gray-600 w-full"></hr>
-                  <li class="hover:bg-zinc-600 py-8 px-6 w-full">Team</li>
-                  <hr class="bg-gray-600 w-full"></hr>
-                  <li class="hover:bg-zinc-600 py-8 px-6 w-full">Anime</li>
-                  <hr class="bg-gray-600 w-full"></hr>
-                  <li class="hover:bg-zinc-600 py-8 px-6 w-full">Drakor</li>
-                  <hr class="bg-gray-600 w-full"></hr>
-                </ul>
-              </div>
-            </button>
-            
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-              <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 mt-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 mt-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Team</a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 mt-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Anime</a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 mt-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Drakor</a>
-                </li>
-                <li>
-                  <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                      Sign in
-                    </span>
-                  </button>
-                </li>
-              </ul>  
-            </div>
-          </div>
-        </nav>
-        <div className='bg-inherit'>
-          <img src={gambar1} className='w-full h-full'></img>
-        </div>
-
-        {/* bagian content review drakor */}
-
-        <div> 
-            <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-2 my-2 rounded      ">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <div class="flex items-center">
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Drakor Riview</span>
-                    </div>
-                    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3  rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                        <button href="#" className='bg-blue-400 rounded p-1 shadow-lg shadow-cyan-500/50'>See All</button>
-                    </button>
-                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                            <li>
-                                <button href="#" className='bg-cyan-500 rounded p-1 shadow-lg shadow-cyan-500/50'>See All</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div className='flex items-center'>
-                <div id='slider' className='w-full h-full overflow-x-auto scroll whitespace-nowrap scroll-smooth'>
-                    {data.map((item) => (
-                        <img className='w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300' src={item.img} alt='/'></img>
-                    ) )}
-                    </div>
-                </div>
-        </div>
-
-        {/* Bagian Content Review Anime */}
-
-        <div> 
-            <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-2 my-2 rounded      ">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <div class="flex items-center">
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Anime Riview</span>
-                    </div>
-                    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3  rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                        <button href="#" className='bg-blue-400 rounded p-1 shadow-lg shadow-cyan-500/50'>See All</button>
-                    </button>
-                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                            <li>
-                                <button href="#" className='bg-cyan-500 rounded p-1 shadow-lg shadow-cyan-500/50'>See All</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div className='flex items-center'>
-                <div id='slider' className='w-full h-full overflow-x-auto scroll whitespace-nowrap scroll-smooth'>
-                    {data1.map((item) => (
-                        <img className='w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300' src={item.img} alt='/'></img>
-                    ) )}
-                    </div>
-                </div>
-        </div>
-        
-        {/* Bagian Footer */}
-
-    <footer className="bg-gray-900 text-white py-7-">
-        <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
-            <h1 className="lg:text-4x1 text-3x1 md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5">
-            <span className="text-teal-400">P r o j e c t</span> Kelompok 2</h1>
-        </div>
-        
-
-        
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-10 text-center mt-10 pt-2 text-gray-400 text-sm pb-8">
-           <span>© 2023 Appy. All rights reserved.</span>
-           <span>Terms · Privacy Policy</span>
-
-           <div className='flex'>
-           <img src={lgithub} alt='logo-github' className='max-h-10 max-w-10 px-5'></img>
-           <img src={ltwitter} alt='logo-twitter' className='max-h-10 max-w-10' ></img>
-           </div>
-        </div>
-    </footer>
-
+      
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/team' element={<Team/>}/>
+          <Route path='/anime' element={<Anime/>}/>
+          <Route path='/drakor' element={<Drakor/>}/>
+        </Routes>
+      </Router>
       </div>
     </div>
     

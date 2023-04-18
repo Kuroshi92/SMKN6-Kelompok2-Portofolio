@@ -1,8 +1,8 @@
-export const data1 = [
+export const dataAnime = [
+    
     {
         id : 1,
         img : "https://bacaterus.com/wp-content/uploads/2022/08/konosuba-season-1___.webp",
-
     },
     {
         id : 2,

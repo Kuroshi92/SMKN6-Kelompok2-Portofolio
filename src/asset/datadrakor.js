@@ -1,4 +1,4 @@
-export const data = [
+export const dataDrakor = [
     {
         id : 1,
         img : "https://bacaterus.com/wp-content/uploads/2022/02/School-2017_.webp",
