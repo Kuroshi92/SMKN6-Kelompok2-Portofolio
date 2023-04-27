@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import '../index.css';
+import logo from '../asset/logorpl2.png'
 
 
 function Nav(){
@@ -15,7 +16,7 @@ function Nav(){
             <nav class="bg-white border-gray-200 dark:bg-gray-900 h-20 w-full hover: z-50">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a onClick={() => navigate('/')} class="flex items-center">
-              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
+              <img src={logo} class="h-[55px] mr-3" alt="Flowbite Logo" />
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white cursor-pointer">AniKor</span>
             </a>
             <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none  hover:bg-gray-900 group">
