@@ -11,5 +11,7 @@ module.exports = {
       inset: ['group-focus']
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

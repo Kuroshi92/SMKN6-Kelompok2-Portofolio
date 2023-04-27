@@ -17,3 +17,45 @@ code {
     monospace;
     
 }
+
+/* Modal */
+#login-modal {
+  display: none;
+}
+
+#login-modal.show {
+  display: block;
+}
+
+#login-modal .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#login-modal .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  z-index: 2;
+}
+
+#login-modal .close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+

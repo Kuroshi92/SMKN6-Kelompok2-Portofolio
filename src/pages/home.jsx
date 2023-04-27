@@ -10,7 +10,7 @@ const Home = () => {
         <div>
             <Nav />
             <div className='bg-inherit'>
-                <img src={gambar1} className='w-full h-full'></img>
+                <img src={gambar1} className='w-full xl:h-[667px] md:h-full'></img>
             </div>
             <Anime />
             <Drakor />

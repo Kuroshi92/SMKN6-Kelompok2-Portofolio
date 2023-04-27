@@ -4,6 +4,8 @@ import Home from './pages/home';
 import Anime from './pages/anime';
 import Drakor from './pages/drakor';
 import Team from './pages/team';
+import Login from './pages/login';
+
 
 function App() {
   
@@ -17,6 +19,7 @@ function App() {
           <Route path='/team' element={<Team/>}/>
           <Route path='/anime' element={<Anime/>}/>
           <Route path='/drakor' element={<Drakor/>}/>
+          <Route path='/login' element={<Login/>}/>
         </Routes>
       </Router>
       </div>
