@@ -1,5 +1,10 @@
-import {dataDrakor} from "../asset/datadrakor"
 import {useNavigate } from 'react-router-dom';
+import school2017 from '../asset/school_2017_landscape.jpg'
+import whoareyouschool2015 from '../gambardrakor/whoareyou_school_2015_landscape.webp'
+import yumicell from '../gambardrakor/yumi_cell_landscape.png'
+import truebeauty from '../gambardrakor/truebeauty_landscape.png'
+import whatswrongwithsecretarykim from '../gambardrakor/Whats_Wrong_With_Secretary_Kim.png'
+import theuncannycounter from '../gambardrakor/the_uncanny_counter_landscape.jpg'
 
 function Drakor(){
     const navigate = useNavigate()
@@ -25,11 +30,111 @@ function Drakor(){
                         </div>
                     </div>
                 </nav>
-                <div className='flex items-center'>
-                    <div id='slider' className='w-full h-full overflow-x-auto scroll whitespace-nowrap scroll-smooth'>
-                        {dataDrakor.map((item) => (
-                            <img className='w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300' src={item.img} alt='/'></img>
-                        ) )}
+                <div class="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth py-4">
+                    <div class="flex items-center -mx-1">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                            <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                    <img className=" cursor-pointer object-fill w-96 h-48" src={school2017} alt="school2017/img"/>
+                                </div>
+                                <div className="px-2 py-2">
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">School-2017</h2>
+                                    <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
+                                    <ul className="flex text-gray-900 py-1">
+                                        <li className="cursor-pointer hover:text-blue-300">Comedy</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Romance</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Coming Of Age</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                            <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={whoareyouschool2015} alt="whoareyouschool2015/img"/>
+                                </div>
+                                <div className="px-2 py-2">
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Who Are You School 2015</h2>
+                                    <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
+                                    <ul className="flex text-gray-900 py-1">
+                                        <li className="cursor-pointer hover:text-blue-300">Drama</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Mystery</li>  <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Youth</li>  <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Romance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                      </div>
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                            <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={yumicell} alt="yumicell/img"/>
+                                </div>
+                                <div className="px-2 py-2">
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Yumi's Cells 1</h2>
+                                    <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
+                                    <ul className="flex text-gray-900 py-1">
+                                        <li className="cursor-pointer hover:text-blue-300">Comedy</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Drama</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Pychological</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                            <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={truebeauty} alt="truebeauty/img"/>
+                                </div>
+                                <div className="px-2 py-2">
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">TrueBeauty</h2>
+                                    <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
+                                    <ul className="flex text-gray-900 py-1">
+                                        <li className="cursor-pointer hover:text-blue-300">Comedy</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Romance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                            <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={whatswrongwithsecretarykim} alt="What'sWrongWithSecretaryKim/img"/>
+                                </div>
+                                <div className="px-2 py-2">
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">What's Wrong With Secretary Kim</h2>
+                                    <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
+                                    <ul className="flex text-gray-900 py-1">
+                                        <li className="cursor-pointer hover:text-blue-300">Comedy</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Romance</li> 
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                            <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={theuncannycounter} alt="The-Uncanny-Counter/img"/>
+                                </div>
+                                <div className="px-2 py-2">
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">The Uncanny Counter</h2>
+                                    <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
+                                    <ul className="flex text-gray-900 py-1">
+                                        <li className="cursor-pointer hover:text-blue-300">Adventure</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Fantasy</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Martial</li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
