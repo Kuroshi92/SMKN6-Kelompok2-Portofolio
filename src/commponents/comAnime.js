@@ -1,4 +1,9 @@
 import konosuba from '../asset/unnamed.png'
+import Alice from '../asset/Alice.jpg'
+import smartphone2 from '../asset/smartphone2.jpeg'
+import thedangers from '../asset/thedangers.jpeg'
+import Onepiece from '../asset/Onepiece.jpeg'
+import dmnslyr from '../asset/dmnslyr.jpeg'
 import {useNavigate } from 'react-router-dom';
 function Anime(){
     const navigate = useNavigate()
@@ -36,7 +41,7 @@ function Anime(){
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
                                         <li className="cursor-pointer hover:text-blue-300">Harem</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Sihir</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Magic</li> <p>&nbsp;/&nbsp;</p>
                                         <li className="cursor-pointer hover:text-blue-300">Komedi</li>
                                     </ul>
                                 </div>
@@ -47,15 +52,31 @@ function Anime(){
                         <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
-                                    <img className=" cursor-pointer object-fill w-23 h-48" src={konosuba} alt="Konosuba/img"/>
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={Alice} alt="Alice/img"/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Konosuba!</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Alice gear aegis expansion</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
-                                        <li className="cursor-pointer hover:text-blue-300">Harem</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Sihir</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Komedi</li>
+                                        <li className="cursor-pointer hover:text-blue-300">Action</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">SCI-FI</li>
+                                    </ul>
+                                </div>
+                            </div>
+                      </div>
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                            <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={smartphone2} alt="smartphone2/img"/>
+                                </div>
+                                <div className="px-2 py-2">
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">In another world with my smartphone 2</h2>
+                                    <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
+                                    <ul className="flex text-gray-900 py-1">
+                                        <li className="cursor-pointer hover:text-blue-300">Adventure</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Comedy</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Romance</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Thriller</li>
                                     </ul>
                                 </div>
                             </div>
@@ -65,15 +86,13 @@ function Anime(){
                         <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
-                                    <img className=" cursor-pointer object-fill w-23 h-48" src={konosuba} alt="Konosuba/img"/>
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={thedangers} alt="thedangers/img"/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Konosuba!</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">The dangers in my heart!</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
-                                        <li className="cursor-pointer hover:text-blue-300">Harem</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Sihir</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Komedi</li>
+                                        <li className="cursor-pointer hover:text-blue-300">Comedy</li> 
                                     </ul>
                                 </div>
                             </div>
@@ -83,15 +102,14 @@ function Anime(){
                         <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
-                                    <img className=" cursor-pointer object-fill w-23 h-48" src={konosuba} alt="Konosuba/img"/>
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={Onepiece} alt="Onepiece/img"/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Konosuba!</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">One Piece</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
-                                        <li className="cursor-pointer hover:text-blue-300">Harem</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Sihir</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Komedi</li>
+                                        <li className="cursor-pointer hover:text-blue-300">Adventure</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Fantasy</li> 
                                     </ul>
                                 </div>
                             </div>
@@ -101,21 +119,22 @@ function Anime(){
                         <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
-                                    <img className=" cursor-pointer object-fill w-23 h-48" src={konosuba} alt="Konosuba/img"/>
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={dmnslyr} alt="dmnslyr/img"/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Konosuba!</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Demon slayer :kimetsu no yaiba</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
-                                        <li className="cursor-pointer hover:text-blue-300">Harem</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Sihir</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Komedi</li>
+                                        <li className="cursor-pointer hover:text-blue-300">Adventure</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Fantasy</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Martial</li> 
                                     </ul>
                                 </div>
                             </div>
                             
                             
                         </div>
+                        
 
                     </div>
                     
