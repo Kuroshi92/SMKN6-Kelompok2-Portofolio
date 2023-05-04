@@ -1,5 +1,3 @@
-import lgithub from "../asset/logoGitHub.png"
-import ltwitter from "../asset/logoTwitter.png"
 import '../index.css';
 
 function Footer(){
