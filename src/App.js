@@ -5,6 +5,8 @@ import Anime from './pages/anime';
 import Drakor from './pages/drakor';
 import Team from './pages/team';
 import Login from './pages/login';
+import KonosubaPage from './pagesanime/konosubas1page';
+import HomeAdmin from './pages/halamanadmin';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path='/anime' element={<Anime/>}/>
           <Route path='/drakor' element={<Drakor/>}/>
           <Route path='/login' element={<Login/>}/>
+          <Route path='/konosubapage' element={<KonosubaPage/>}/>
+          <Route path='/adminpage' element={<HomeAdmin/>}/>
         </Routes>
       </Router>
       </div>

@@ -9,7 +9,7 @@ function Login() {
 
     if (username === "admin" && password === "admin") {
       alert("Login successful!");
-      window.location.href = "/" ;
+      window.location.href = "/adminpage" ;
     } else {
       alert("Invalid username or password");
     }

@@ -1,8 +1,9 @@
 import Nav from "../commponents/navbar"
 import Footer from "../commponents/footer";
+import {useNavigate } from 'react-router-dom';
 
 const Anime = () => {
-    
+    const navigate = useNavigate()
     return(
         <div className="bg-gray-800">
             <Nav/>
@@ -29,15 +30,7 @@ const Anime = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Mengisahkan seorang otaku sekaligus hikkikomori bernama Kazuma Satou. Sehari-hari Kazuma menghabiskan harinya hanya berada di dalam kamarnya sambil bermain game. Suatu hari ia harus berhadapan dengan dunia luar, hanya demi membeli sebuah game yang baru di rilis. Sepulang dari perjalanan membeli game tersebut, ia bertemu dengan seorang gadis yang tengah menyebrang jalan. Namun tiba-tiba, ia melihat siluet kendaraan besar yang akan menabrak gadis tersebut. Meski penuh keraguan, ia akhirnya memberanikan diri untuk mendorong gadis tersebut. Sang gadis bisa selamat, tetapi Kazuma justru malah meninggal akibat perbuatannya</p>
                         <div class=" mt-4 flex justify-between">
-                            <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
-                            <a href="https://www.youtube.com/watch?v=ucRTZbSkqE0&pp=ygUca29ub3N1YmEgczEgdHJhaWxlciBzdWIgaW5kbw%3D%3D" target="_blank">
-                            <button  type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
-                                <svg className="w-[20px] h-[24px] mt-[2px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"></path>
-                                </svg>
-                                Tonton Cuplikan Anime
-                            </button>
-                        </a>
+                            <a onClick={() => navigate('/konosubapage')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                         </div>
                         
                     </div>
@@ -61,16 +54,7 @@ const Anime = () => {
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Shitara, Yotsuyu, Kaede, dan Fumika adalah empat orang gadis yang punya kemampuan khusus. Mereka dihadapkan pada pertarungan melawan alien, Vice, yang pernah mendesak umat manusia untuk meninggalkan bumi.</p>
                         <div class=" mt-4 flex justify-between">
                             <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
-                            <a href="https://youtu.be/2CfbtUg98IU">
-                            <button  type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
-                                <svg className="w-[20px] h-[24px] mt-[2px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"></path>
-                                </svg>
-                                Tonton Cuplikan Anime
-                            </button>
-                        </a>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -96,16 +80,7 @@ const Anime = () => {
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Toya dan para gadisnya mengkesplorasi reruntuhan langit peninggalan Dr. Babylon. Mereka mendirikan negara Brunhild dan menemukan sebuah senjata tempur humanoid untuk melawan monster kristal yang menyerang manusia</p>
                         <div class=" mt-4 flex justify-between">
                             <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
-                            <a href="https://youtu.be/lOqNzo4_Ezc">
-                            <button  type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
-                                <svg className="w-[20px] h-[24px] mt-[2px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"></path>
-                                </svg>
-                                Tonton Cuplikan Anime
-                            </button>
-                        </a>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -125,16 +100,7 @@ const Anime = () => {
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Kyotaro Ichikawa merupakan seorang siswa SMA biasa. Tapi dalam hatinya Dia merasa tersiksa secara psikologis. Dia sering menghabiskan waktu untuk mencari cara mengganggu kehidupan damai Yamada Anna, teman sekelasnya yang ia sukai dan ternyata juga sedikit aneh.</p>
                         <div class=" mt-4 flex justify-between">
                             <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
-                            <a href="https://youtu.be/rLO68L82ZnE">
-                            <button  type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
-                                <svg className="w-[20px] h-[24px] mt-[2px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"></path>
-                                </svg>
-                                Tonton Cuplikan Anime
-                            </button>
-                        </a>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -156,16 +122,7 @@ const Anime = () => {
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Anime One Piece menceritakan perjalanan Luffy, seorang anak laki-laki yang bertemu bajak laut hebat bernama Shanks, dimana Luffy terinspirasi oleh kehebatan Shanks dan bermimpi suatu hari nanti ingin menjadi bajak laut. Kemudian Shanks menjanjikan Luffy untuk reuni di masa depan dan memberikan topi jeraminya.</p>
                         <div class=" mt-4 flex justify-between">
                             <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
-                            <a href="https://youtu.be/LHTYpWI3S6Q">
-                            <button  type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
-                                <svg className="w-[20px] h-[24px] mt-[2px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"></path>
-                                </svg>
-                                Tonton Cuplikan Anime
-                            </button>
-                        </a>
                         </div>
-                        
                     </div>
                 </div>
             </div>
