@@ -1,13 +1,13 @@
 import Nav from "../commponents/navbar";
 import "../index.css";
 import "../App.css";
-import konosuba from "../asset/unnamed.png";
+import Smartphone from "../asset/smartphone2.jpeg";
 import { useState } from "react";
 import React from "react";
-import { datakonosubaA } from "../commponents/datatest";
+import { dataAlice } from "../commponents/datatest";
 import Footer from "../commponents/footer";
 
-const Konosubapage = () => {
+const SmartphonePage = () => {
   const [showMore, setShowMore] = useState(false);
 
   const handleShowMore = () => {
@@ -21,7 +21,7 @@ const Konosubapage = () => {
         {/* Background gambar */}
         <div
           className="absolute top-20 right-0 bottom-0 left-0 bg-cover bg-center filter brightness-75 z-10 "
-          style={{ backgroundImage: `url(${konosuba})` }}
+          style={{ backgroundImage: `url(${Smartphone})` }}
         />
 
         {/* Gambar di sebelah kiri */}
@@ -29,29 +29,26 @@ const Konosubapage = () => {
           <img
             className="mx-auto ml-28 rounded-lg shadow-lg sm:max-w-md w-56"
             src={
-              "https://i.pinimg.com/564x/3e/3b/a4/3e3ba4d763b406b6307d11343b23316e.jpg"
+              "https://bacaterus.com/wp-content/uploads/2023/04/In-Another-World-With-My-Smartphone-2__.webp"
             }
             alt="Movie Poster"
           />
         </div>
 
         {/* Informasi di sebelah kanan */}
-        <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[24px]">
+        <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[33px]">
           <h1 className="text-3xl font-bold -mt-50 text-white">
-            Konosuba: God's Blessing on This Wonderful World! Season 1
+          Alice gear aegis expansion
           </h1>
           <div className="flex items-center mt-2 mb-2">
             <span className="text-lg font-semibold text-gray-200 mr-2">
               Genre:
             </span>
             <span className="flex text-lg font-semibold text-gray-200">
-              <ul className="cursor-pointer hover:text-blue-400">Isekai</ul>
+              <ul className="cursor-pointer hover:text-blue-400">Action</ul>
               &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">Adventure</ul>
-              &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">Fantasy</ul>
-              &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">Comedy</ul>
+              <ul className="cursor-pointer hover:text-blue-400">SCI-FI</ul>
+              
             </span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mt-2 mb-1">
@@ -60,11 +57,11 @@ const Konosubapage = () => {
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
             <span className="mr-2">Studio:</span>
-            <span className="text-blue-200">Studio Deen</span>
+            <span className="text-blue-200">Nomad</span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
             <span className="mr-2">Penulis:</span>
-            <span className="text-blue-200">Natsume Akatsuki</span>
+            <span className="text-blue-200">Kenji Sugihara</span>
           </div>
           <div className="pt-9">
             <button
@@ -86,7 +83,7 @@ const Konosubapage = () => {
                   d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                 ></path>
               </svg>
-              <a href="https://youtu.be/h4dX58X6ln4">Tonton Cuplikan</a>
+              <a href="https://youtu.be/2CfbtUg98IU">Tonton Cuplikan</a>
             </button>
           </div>
         </div>
@@ -144,7 +141,7 @@ const Konosubapage = () => {
         <hr className="w-full h-1  bg-gray-100 border-0  dark:bg-gray-500" />
         <div className="flex items-center justify-center min-h-max bg-gray-700 min-w-screen">
           <div className="flex flex-row px-4 py-8 w-screen overflow-x-auto">
-            {datakonosubaA.map((item) => (
+            {dataAlice.map((item) => (
               <div
                 className="flex flex-col items-center mx-4 flex-shrink-0"
                 key={item.name}
@@ -169,4 +166,4 @@ const Konosubapage = () => {
     </div>
   );
 };
-export default Konosubapage;
+export default SmartphonePage;

@@ -7,6 +7,8 @@ import Team from './pages/team';
 import Login from './pages/login';
 import KonosubaPage from './pagesanime/konosubas1page';
 import HomeAdmin from './pages/halamanadmin';
+import AlicePage from './pagesanime/alicegear';
+import SmartphonePage from './pagesanime/smartphone2';
 
 
 function App() {
@@ -24,6 +26,9 @@ function App() {
           <Route path='/login' element={<Login/>}/>
           <Route path='/konosubapage' element={<KonosubaPage/>}/>
           <Route path='/adminpage' element={<HomeAdmin/>}/>
+          <Route path='/alicepage' element={<AlicePage/>}/>
+          <Route path='/smartphonepage' element={<SmartphonePage/>}/>
+
         </Routes>
       </Router>
       </div>

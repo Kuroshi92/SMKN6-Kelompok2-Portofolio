@@ -53,7 +53,7 @@ const Anime = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Shitara, Yotsuyu, Kaede, dan Fumika adalah empat orang gadis yang punya kemampuan khusus. Mereka dihadapkan pada pertarungan melawan alien, Vice, yang pernah mendesak umat manusia untuk meninggalkan bumi.</p>
                         <div class=" mt-4 flex justify-between">
-                            <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a  onClick={() => navigate('/Alicepage')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@ const Anime = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Toya dan para gadisnya mengkesplorasi reruntuhan langit peninggalan Dr. Babylon. Mereka mendirikan negara Brunhild dan menemukan sebuah senjata tempur humanoid untuk melawan monster kristal yang menyerang manusia</p>
                         <div class=" mt-4 flex justify-between">
-                            <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a onClick={() => navigate('/SmartphonePage')}  class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ const Anime = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Kyotaro Ichikawa merupakan seorang siswa SMA biasa. Tapi dalam hatinya Dia merasa tersiksa secara psikologis. Dia sering menghabiskan waktu untuk mencari cara mengganggu kehidupan damai Yamada Anna, teman sekelasnya yang ia sukai dan ternyata juga sedikit aneh.</p>
                         <div class=" mt-4 flex justify-between">
-                            <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a onClick={() => navigate('/SmartphonePage')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
