@@ -99,11 +99,7 @@ const Anime = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Kyotaro Ichikawa merupakan seorang siswa SMA biasa. Tapi dalam hatinya Dia merasa tersiksa secara psikologis. Dia sering menghabiskan waktu untuk mencari cara mengganggu kehidupan damai Yamada Anna, teman sekelasnya yang ia sukai dan ternyata juga sedikit aneh.</p>
                         <div class=" mt-4 flex justify-between">
-<<<<<<< HEAD
-                            <a onClick={() => navigate('/')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
-=======
                             <a onClick={() => navigate('/thedangerPage')} class="mt-[2px] max-h-6 px-2 cursor-pointer rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
->>>>>>> 1752363dc63d5e138a577ac58579717663b708bb
                         </div>
                     </div>
                 </div>
