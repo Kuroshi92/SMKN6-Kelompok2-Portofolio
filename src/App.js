@@ -9,6 +9,7 @@ import KonosubaPage from './pagesanime/konosubas1page';
 import HomeAdmin from './pages/halamanadmin';
 import AlicePage from './pagesanime/alicegear';
 import SmartphonePage from './pagesanime/smartphone2';
+import SchoolPage from './pagesdrakor/school';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path='/adminpage' element={<HomeAdmin/>}/>
           <Route path='/alicepage' element={<AlicePage/>}/>
           <Route path='/smartphonepage' element={<SmartphonePage/>}/>
+          <Route path='/schoolpage' element={<SchoolPage/>}/>
 
         </Routes>
       </Router>

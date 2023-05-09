@@ -1,13 +1,13 @@
 import Nav from "../commponents/navbar";
 import "../index.css";
 import "../App.css";
-import Smartphone from "../asset/smartphone2.jpeg";
+import School from "../asset/schoolll.jpeg";
 import { useState } from "react";
 import React from "react";
 import { dataAlice } from "../commponents/datatest";
 import Footer from "../commponents/footer";
 
-const SmartphonePage = () => {
+const Schoolpage = () => {
   const [showMore, setShowMore] = useState(false);
 
   const handleShowMore = () => {
@@ -21,7 +21,7 @@ const SmartphonePage = () => {
         {/* Background gambar */}
         <div
           className="absolute top-20 right-0 bottom-0 left-0 bg-cover bg-center filter brightness-75 z-10 "
-          style={{ backgroundImage: `url(${Smartphone})` }}
+          style={{ backgroundImage: `url(${School})` }}
         />
 
         {/* Gambar di sebelah kiri */}
@@ -29,39 +29,43 @@ const SmartphonePage = () => {
           <img
             className="mx-auto ml-28 rounded-lg shadow-lg sm:max-w-md w-56"
             src={
-              "https://bacaterus.com/wp-content/uploads/2023/04/In-Another-World-With-My-Smartphone-2__.webp"
+              "https://bacaterus.com/wp-content/uploads/2022/02/School-2017_.webp"
             }
             alt="Movie Poster"
           />
         </div>
 
         {/* Informasi di sebelah kanan */}
-        <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[32px]">
+        <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[33px]">
           <h1 className="text-3xl font-bold -mt-50 text-white">
-          Alice gear aegis expansion
+          School 2017
           </h1>
           <div className="flex items-center mt-2 mb-2">
             <span className="text-lg font-semibold text-gray-200 mr-2">
               Genre:
             </span>
             <span className="flex text-lg font-semibold text-gray-200">
-              <ul className="cursor-pointer hover:text-blue-400">Action</ul>
+              <ul className="cursor-pointer hover:text-blue-400">Comedy</ul>
               &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">SCI-FI</ul>
+              <ul className="cursor-pointer hover:text-blue-400">Coming Of Age</ul>
+              &nbsp;/&nbsp;
+              <ul className="cursor-pointer hover:text-blue-400">Romance</ul>
+              &nbsp;/&nbsp;
+              <ul className="cursor-pointer hover:text-blue-400">Teen</ul>
               
             </span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mt-2 mb-1">
             <span className="mr-2">Rating:</span>
-            <span className="text-blue-200">8.0</span>
+            <span className="text-blue-200">8.2</span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
             <span className="mr-2">Studio:</span>
-            <span className="text-blue-200">Nomad</span>
+            <span className="text-blue-200">Korea Selatan</span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
             <span className="mr-2">Penulis:</span>
-            <span className="text-blue-200">Kenji Sugihara</span>
+            <span className="text-blue-200">Park Jin-Suk, Jung Chan-Mi, Kim Seung-Won</span>
           </div>
           <div className="pt-9">
             <button
@@ -100,29 +104,19 @@ const SmartphonePage = () => {
             } overflow-hidden`}
           >
             <br />
-            Setelah mengalami kematian yang tragis, seorang siswa SMA bernama
-            Kazuma Satou tiba-tiba menemukan dirinya berdiri di depan seorang
-            dewi bernama Aqua. Dewi ini menawarkan padanya pilihan untuk
-            bereinkarnasi di dunia fantasi untuk menjalani kehidupan baru.Kazuma
-            menerima tawaran ini dan memilih untuk membawa Aqua bersamanya.
+            School 2017 mengisahkan tentang kehidupan siswa sekolah menengah atas, yang berusaha mengatasi stres dalam belajar.
+            Protagonis utamanya adalah Ra Eun-Ho (Kim Se-Jeong), seorang gadis 18 tahun yang ceria dan baik hati.
             <br />
             <br />
-            Segera setelah tiba di dunia baru, Kazuma dan Aqua bertemu dengan
-            seorang penyihir bernama Megumin dan seorang ksatria bernama
-            Darkness. Bersama-sama, mereka membentuk sebuah tim petualangan dan
-            memulai pencarian mereka untuk mengalahkan Raja Iblis, tokoh jahat
-            yang mengancam dunia fantasi ini.
+            Ia memiliki mimpi menjadi seniman webtoon, tapi terjebak dalam pencarian pembuat onar misterius di sekolah, yang disebut 'Siswa X'.
+            Ketika dituduh sebagai Siswa X, mimpinya untuk kuliah di jurusan seni terancam karena ia harus dikeluarkan
             <br />
             <br />
-            Namun, mereka sering kali terlibat dalam situasi kocak dan
-            memalukan, yang membuat perjalanan mereka jauh dari yang diharapkan.
-            Meskipun demikian, mereka terus melanjutkan pencarian mereka dengan
-            semangat dan keberanian. <br />
+            Hyun Tae-Woon (Kim Jung-Hyun) adalah putra direktur sekolah yang menikmati masa mudanya tetapi menyembunyikan bekas luka yang dalam.
+            Sementara Song Dae-Hwi (Jang Dong-Yoon) adalah siswa cerdas yang selalu menempati peringkat 1. <br />
             <br />
             <span className="font-bold">
-              Konosuba Season 1 diproduksi oleh Studio Deen dan disutradarai
-              oleh Takaomi Kanasaki. Seri ini didasarkan pada novel ringan karya
-              Natsume Akatsuki dan diterbitkan oleh Fujimi Shobo.
+            Namun, ia berasal dari keluarga miskin dan terancam tidak bisa melanjutkan pendidikan di universitas impiannya
             </span>
           </p>
           <button
@@ -166,4 +160,4 @@ const SmartphonePage = () => {
     </div>
   );
 };
-export default SmartphonePage;
+export default Schoolpage;

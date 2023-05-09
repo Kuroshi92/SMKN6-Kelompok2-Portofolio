@@ -1,7 +1,9 @@
 import Footer from "../commponents/footer"
 import Nav from "../commponents/navbar"
+import {useNavigate } from 'react-router-dom';
 
 const Drakor = () => {
+    const navigate = useNavigate()
     return(
         <>
         <div  className="bg-gray-800">
@@ -31,14 +33,8 @@ const Drakor = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Song Dae Hwi, Tae Woon, dan Joon Ki merupakan sahabat dekat, hingga sebuah kecelakaan menimpa Joon Ki dan menewaskannya. Kematian sahabatnya tersebut menjadikan Tae Woon dan Dae Hwi renggang, bahkan menjadi musuh.</p>
                         <div class=" mt-4 flex justify-between">
-                            <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a onClick={() => navigate('/schoolpage')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                             <a href="https://youtu.be/6MmDGWMLXno" target="_blank">
-                            <button  type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
-                                <svg className="w-[20px] h-[24px] mt-[2px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"></path>
-                                </svg>
-                                Tonton Cuplikan Drakor
-                            </button>
                         </a>
                         </div>
                         

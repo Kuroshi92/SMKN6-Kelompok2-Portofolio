@@ -1,5 +1,5 @@
 import {useNavigate } from 'react-router-dom';
-import school2017 from '../asset/school_2017_landscape.jpg'
+import school2017 from '../asset/schoolll.jpeg'
 import whoareyouschool2015 from '../gambardrakor/whoareyou_school_2015_landscape.webp'
 import yumicell from '../gambardrakor/yumi_cell_landscape.png'
 import truebeauty from '../gambardrakor/truebeauty_landscape.png'
