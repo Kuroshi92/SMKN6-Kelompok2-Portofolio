@@ -50,34 +50,3 @@ export const datakonosubaA = [
   },
   
 ];
-export const dataAlice = [
-  {
-    id: "1",
-    name: '	Yotsuyu Hirasaka',
-    seiyuu: 'Manami Numakura',
-    peran: 'Karakter Utama',
-    image: 'https://i.ytimg.com/vi/c8eiVrHNA4o/maxresdefault.jpg',
-  },
-  {
-    id: "2",
-    name: 'Shitara Kaneshiya',
-    seiyuu: 'Maaya Uchida',
-    peran: 'Karakter Utama',
-    image: 'https://i.ytimg.com/vi/c8eiVrHNA4o/maxresdefault.jpg',
-  },
-  {
-    id: "3",
-    name: 'Fumika Momoshina',
-    seiyuu: 'Yui Ishikawa',
-    peran: 'Seorang actres senior',
-    image: 'https://i.ytimg.com/vi/c8eiVrHNA4o/maxresdefault.jpg',
-  },
-  {
-    id: "4",
-    name: 'Nodoka Takahata',
-    seiyuu: 'Miyari Nimoto',
-    peran: 'Seorang gadis yang ingin menjadi artis',
-    image: 'https://i.ytimg.com/vi/c8eiVrHNA4o/maxresdefault.jpg',
-  },
-
-];

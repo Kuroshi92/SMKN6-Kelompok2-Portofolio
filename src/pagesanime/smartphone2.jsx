@@ -4,7 +4,7 @@ import "../App.css";
 import Smartphone from "../asset/smartphone2.jpeg";
 import { useState } from "react";
 import React from "react";
-import { dataAlice } from "../commponents/datatest";
+import { dataSmartphone } from "../commponents/datasmartphone2";
 import Footer from "../commponents/footer";
 
 const SmartphonePage = () => {
@@ -25,7 +25,7 @@ const SmartphonePage = () => {
         />
 
         {/* Gambar di sebelah kiri */}
-        <div className="relative z-10 w-[590px] bg-slate-900 sm:py-[5px] mt-[0.6px] bg-opacity-50">
+        <div className="relative z-10 w-[590px] bg-slate-900 sm:py-[5px] mt-[0.9px] mb-[0.8px] bg-opacity-50">
           <img
             className="mx-auto ml-28 rounded-lg shadow-lg sm:max-w-md w-56"
             src={
@@ -38,8 +38,12 @@ const SmartphonePage = () => {
         {/* Informasi di sebelah kanan */}
         <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[33px]">
           <h1 className="text-3xl font-bold -mt-50 text-white">
-          Alice gear aegis expansion
+          Isekai wa Smartphone to Tomo ni Season 2
           </h1>
+          <div className="flex items-center text-white text-lg font-semibold mt-2 mb-1">
+            <span className="mr-2">Inggirs:</span>
+            <span className="text-blue-200">In Another World With My Smartphone 2</span>
+          </div>
           <div className="flex items-center mt-2 mb-2">
             <span className="text-lg font-semibold text-gray-200 mr-2">
               Genre:
@@ -53,7 +57,7 @@ const SmartphonePage = () => {
           </div>
           <div className="flex items-center text-white text-lg font-semibold mt-2 mb-1">
             <span className="mr-2">Rating:</span>
-            <span className="text-blue-200">8.0</span>
+            <span className="text-blue-200">6.8</span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
             <span className="mr-2">Studio:</span>
@@ -141,7 +145,7 @@ const SmartphonePage = () => {
         <hr className="w-full h-1  bg-gray-100 border-0  dark:bg-gray-500" />
         <div className="flex items-center justify-center min-h-max bg-gray-700 min-w-screen">
           <div className="flex flex-row px-4 py-8 w-screen overflow-x-auto">
-            {dataAlice.map((item) => (
+            {dataSmartphone.map((item) => (
               <div
                 className="flex flex-col items-center mx-4 flex-shrink-0"
                 key={item.name}
