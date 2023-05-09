@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import '../index.css';
 import logo from '../asset/logorpl2.png'
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState} from "react";
 
 function NavAdmin(){
     const navigate = useNavigate()

@@ -4,7 +4,7 @@ import "../App.css";
 import Alice from "../asset/Alice.jpg";
 import { useState } from "react";
 import React from "react";
-import { dataAlice } from "../commponents/datatest";
+import { dataAlice } from "../commponents/dataalicegear";
 import Footer from "../commponents/footer";
 
 const Alicepage = () => {
@@ -53,15 +53,15 @@ const Alicepage = () => {
           </div>
           <div className="flex items-center text-white text-lg font-semibold mt-2 mb-1">
             <span className="mr-2">Rating:</span>
-            <span className="text-blue-200">8.0</span>
+            <span className="text-blue-200">5.0</span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
             <span className="mr-2">Studio:</span>
             <span className="text-blue-200">Nomad</span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
-            <span className="mr-2">Penulis:</span>
-            <span className="text-blue-200">Kenji Sugihara</span>
+            <span className="mr-2">Sutradara:</span>
+            <span className="text-blue-200">Hirokazu Hanai</span>
           </div>
           <div className="pt-9">
             <button
@@ -100,29 +100,21 @@ const Alicepage = () => {
             } overflow-hidden`}
           >
             <br />
-            Setelah mengalami kematian yang tragis, seorang siswa SMA bernama
-            Kazuma Satou tiba-tiba menemukan dirinya berdiri di depan seorang
-            dewi bernama Aqua. Dewi ini menawarkan padanya pilihan untuk
-            bereinkarnasi di dunia fantasi untuk menjalani kehidupan baru.Kazuma
-            menerima tawaran ini dan memilih untuk membawa Aqua bersamanya.
+            Berlatar belakang di sebuah tempat di mana manusia dipaksa untuk meninggalkan planet Bumi karena ekspansi ras alien bernama Vice yang membuat mereka terusir dari rumahnya sendiri.
+            Selama bertahun-tahun, manusia tinggal di luar angkasa dan menempati sebuah kapal yang terbuat dari Bumi.
             <br />
             <br />
-            Segera setelah tiba di dunia baru, Kazuma dan Aqua bertemu dengan
-            seorang penyihir bernama Megumin dan seorang ksatria bernama
-            Darkness. Bersama-sama, mereka membentuk sebuah tim petualangan dan
-            memulai pencarian mereka untuk mengalahkan Raja Iblis, tokoh jahat
-            yang mengancam dunia fantasi ini.
+            Tentu, kapal luar angkasa yang mereka tempati sekarang ini menjadi satu-satunya harapan terakhir.
+            Namun, harapan mereka menjadi lebih banyak lagi setelah seorang wanita muda bernama Aktris mampu membuat senjata yang bisa melukai Vice.
             <br />
             <br />
-            Namun, mereka sering kali terlibat dalam situasi kocak dan
-            memalukan, yang membuat perjalanan mereka jauh dari yang diharapkan.
-            Meskipun demikian, mereka terus melanjutkan pencarian mereka dengan
-            semangat dan keberanian. <br />
+           Alice Gears, itulah senjata yang berhasil dibuat oleh Aktris.
+           Berbekal senjata tersebut, mereka kini mulai menyerang Vice dengan harapan agar bisa mendapatkan kembali tempat tinggal mereka seperti sedia kala.<br />
             <br />
             <span className="font-bold">
-              Konosuba Season 1 diproduksi oleh Studio Deen dan disutradarai
-              oleh Takaomi Kanasaki. Seri ini didasarkan pada novel ringan karya
-              Natsume Akatsuki dan diterbitkan oleh Fujimi Shobo.
+              <h1>Alice Gear Aegis Expansion diproduksi oleh Studio Nomad dan disutradarai
+              oleh Hirokazu Hanai.</h1>
+              Serial anime Alice Gear Aegis Expansion sendiri diadaptasi dari mobile game asal Jepang yang dikembangkan oleh Pyramid dan dipublikasikan oleh Colopl.
             </span>
           </p>
           <button

@@ -1,13 +1,13 @@
 import Nav from "../commponents/navbar";
 import "../index.css";
 import "../App.css";
-import konosuba from "../asset/unnamed.png";
+import TheDangerMyHeart from "../asset/thedangers.jpeg";
 import { useState } from "react";
 import React from "react";
-import { datakonosubaA } from "../commponents/datakonosuba";
+import { dataTheDangerMyHeart } from "../commponents/datathedangermyheart";
 import Footer from "../commponents/footer";
 
-const Konosubapage = () => {
+const TheDangerPage = () => {
   const [showMore, setShowMore] = useState(false);
 
   const handleShowMore = () => {
@@ -21,54 +21,57 @@ const Konosubapage = () => {
         {/* Background gambar */}
         <div
           className="absolute top-20 right-0 bottom-0 left-0 bg-cover bg-center filter brightness-75 z-10 "
-          style={{ backgroundImage: `url(${konosuba})` }}
+          style={{ backgroundImage: `url(${TheDangerMyHeart})` }}
         />
 
         {/* Gambar di sebelah kiri */}
-        <div className="relative z-10 w-[590px] bg-slate-900 sm:py-[5px] mt-[0.6px] bg-opacity-50">
+        <div className="relative z-10 w-[590px] bg-slate-900 sm:py-[5px] mt-[0.9px] mb-[0.8px] bg-opacity-50">
           <img
             className="mx-auto ml-28 rounded-lg shadow-lg sm:max-w-md w-56"
             src={
-              "https://i.pinimg.com/564x/3e/3b/a4/3e3ba4d763b406b6307d11343b23316e.jpg"
+              "https://m.media-amazon.com/images/M/MV5BZmY3ZmZlY2QtZDMwMy00ZDYyLTgxYzYtYTdmY2UwNzFhOTAxXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg"
             }
             alt="Movie Poster"
           />
         </div>
 
         {/* Informasi di sebelah kanan */}
-        <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[24px]">
+        <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[33px]">
           <h1 className="text-3xl font-bold -mt-50 text-white">
-            Kono Subarashii Sekai ni Shukufuku wo! Season 1
+          Boku no Kokoro no Yabai Yatsu
           </h1>
           <div className="flex items-center text-white text-lg font-semibold mt-2 mb-1">
             <span className="mr-2">Inggirs:</span>
-            <span className="text-blue-200">KonoSuba: God's Blessing on This Wonderful World!</span>
+            <span className="text-blue-200">The Dangers in My Heart</span>
           </div>
           <div className="flex items-center mt-2 mb-2">
             <span className="text-lg font-semibold text-gray-200 mr-2">
               Genre:
             </span>
             <span className="flex text-lg font-semibold text-gray-200">
-              <ul className="cursor-pointer hover:text-blue-400">Isekai</ul>
-              &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">Adventure</ul>
-              &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">Fantasy</ul>
+              <ul className="cursor-pointer hover:text-blue-400">Romance</ul>
               &nbsp;/&nbsp;
               <ul className="cursor-pointer hover:text-blue-400">Comedy</ul>
+              &nbsp;/&nbsp;
+              <ul className="cursor-pointer hover:text-blue-400">School</ul>
+              &nbsp;/&nbsp;
+              <ul className="cursor-pointer hover:text-blue-400">Shounen</ul>
+              &nbsp;/&nbsp;
+              <ul className="cursor-pointer hover:text-blue-400">Slice Of Life</ul>
+              
             </span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mt-2 mb-1">
             <span className="mr-2">Rating:</span>
-            <span className="text-blue-200">8.0</span>
+            <span className="text-blue-200">8.6</span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
             <span className="mr-2">Studio:</span>
-            <span className="text-blue-200">Studio Deen</span>
+            <span className="text-blue-200">Shin-Ei Animation</span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
-            <span className="mr-2">Penulis:</span>
-            <span className="text-blue-200">Natsume Akatsuki</span>
+            <span className="mr-2">Penulis:</span>{/* Sutradra: Hiroaki Akagi */}
+            <span className="text-blue-200">Norio Sakurai</span>
           </div>
           <div className="pt-9">
             <button
@@ -90,7 +93,7 @@ const Konosubapage = () => {
                   d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                 ></path>
               </svg>
-              <a href="https://youtu.be/h4dX58X6ln4">Tonton Cuplikan</a>
+              <a href="https://youtu.be/2CfbtUg98IU">Tonton Cuplikan</a>
             </button>
           </div>
         </div>
@@ -107,29 +110,22 @@ const Konosubapage = () => {
             } overflow-hidden`}
           >
             <br />
-            Setelah mengalami kematian yang tragis, seorang siswa SMA bernama
-            Kazuma Satou tiba-tiba menemukan dirinya berdiri di depan seorang
-            dewi bernama Aqua. Dewi ini menawarkan padanya pilihan untuk
-            bereinkarnasi di dunia fantasi untuk menjalani kehidupan baru.Kazuma
-            menerima tawaran ini dan memilih untuk membawa Aqua bersamanya.
+            Bagi Orang lain, Kyoutaro Ichikawa terlihat seperti siswa SMA pada umumnya.
+            Namun, di hatinya terbesit keinginan untuk membunuh seseorang.
+            Walau Begitu,hasrat membunuh yang ia maksud adalah agar ia bisa mengalahkan idol di kelasnya,Anna Yamada.
             <br />
             <br />
-            Segera setelah tiba di dunia baru, Kazuma dan Aqua bertemu dengan
-            seorang penyihir bernama Megumin dan seorang ksatria bernama
-            Darkness. Bersama-sama, mereka membentuk sebuah tim petualangan dan
-            memulai pencarian mereka untuk mengalahkan Raja Iblis, tokoh jahat
-            yang mengancam dunia fantasi ini.
+            Seorang wanita paling cantik dan disukai oelh banyak siswa.
+            Suatu hari, Ichikawa menyadari bahwa Yamada merupakan gadis kikuk dan terus menggodanya.
             <br />
             <br />
-            Namun, mereka sering kali terlibat dalam situasi kocak dan
-            memalukan, yang membuat perjalanan mereka jauh dari yang diharapkan.
-            Meskipun demikian, mereka terus melanjutkan pencarian mereka dengan
-            semangat dan keberanian. <br />
+            Namun siapa sangka, pertemuan ini menjadi awal dari kisah mereka.
+            Kini, jarak dan ikatan keduannya menjadi lebih dekat lagi. <br />
             <br />
             <span className="font-bold">
-              Konosuba Season 1 diproduksi oleh Studio Deen dan disutradarai
-              oleh Takaomi Kanasaki. Seri ini didasarkan pada novel ringan karya
-              Natsume Akatsuki dan diterbitkan oleh Fujimi Shobo.
+              Boku no Kokoro no Yabai Yatsu diproduksi oleh Studio Shin-Ei Animation dan disutradarai
+              oleh Hiroaki Akagi.
+              Cerita asli anime berjudul alternatif “The Dangers in My Heart” ini diadaptasi dari manga karya Norio Sakurai.
             </span>
           </p>
           <button
@@ -148,7 +144,7 @@ const Konosubapage = () => {
         <hr className="w-full h-1  bg-gray-100 border-0  dark:bg-gray-500" />
         <div className="flex items-center justify-center min-h-max bg-gray-700 min-w-screen">
           <div className="flex flex-row px-4 py-8 w-screen overflow-x-auto">
-            {datakonosubaA.map((item) => (
+            {dataTheDangerMyHeart.map((item) => (
               <div
                 className="flex flex-col items-center mx-4 flex-shrink-0"
                 key={item.name}
@@ -173,4 +169,4 @@ const Konosubapage = () => {
     </div>
   );
 };
-export default Konosubapage;
+export default TheDangerPage;

@@ -30,7 +30,7 @@ const Anime = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Mengisahkan seorang otaku sekaligus hikkikomori bernama Kazuma Satou. Sehari-hari Kazuma menghabiskan harinya hanya berada di dalam kamarnya sambil bermain game. Suatu hari ia harus berhadapan dengan dunia luar, hanya demi membeli sebuah game yang baru di rilis. Sepulang dari perjalanan membeli game tersebut, ia bertemu dengan seorang gadis yang tengah menyebrang jalan. Namun tiba-tiba, ia melihat siluet kendaraan besar yang akan menabrak gadis tersebut. Meski penuh keraguan, ia akhirnya memberanikan diri untuk mendorong gadis tersebut. Sang gadis bisa selamat, tetapi Kazuma justru malah meninggal akibat perbuatannya</p>
                         <div class=" mt-4 flex justify-between">
-                            <a onClick={() => navigate('/konosubapage')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a onClick={() => navigate('/konosubapage')} class="mt-[2px] max-h-6 px-2 cursor-pointer rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                         </div>
                         
                     </div>
@@ -53,7 +53,7 @@ const Anime = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Shitara, Yotsuyu, Kaede, dan Fumika adalah empat orang gadis yang punya kemampuan khusus. Mereka dihadapkan pada pertarungan melawan alien, Vice, yang pernah mendesak umat manusia untuk meninggalkan bumi.</p>
                         <div class=" mt-4 flex justify-between">
-                            <a  onClick={() => navigate('/Alicepage')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a  onClick={() => navigate('/Alicepage')} class="mt-[2px] max-h-6 px-2 cursor-pointer rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@ const Anime = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Toya dan para gadisnya mengkesplorasi reruntuhan langit peninggalan Dr. Babylon. Mereka mendirikan negara Brunhild dan menemukan sebuah senjata tempur humanoid untuk melawan monster kristal yang menyerang manusia</p>
                         <div class=" mt-4 flex justify-between">
-                            <a onClick={() => navigate('/SmartphonePage')}  class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a onClick={() => navigate('/SmartphonePage')}  class="mt-[2px] max-h-6 px-2 cursor-pointer  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,11 @@ const Anime = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Kyotaro Ichikawa merupakan seorang siswa SMA biasa. Tapi dalam hatinya Dia merasa tersiksa secara psikologis. Dia sering menghabiskan waktu untuk mencari cara mengganggu kehidupan damai Yamada Anna, teman sekelasnya yang ia sukai dan ternyata juga sedikit aneh.</p>
                         <div class=" mt-4 flex justify-between">
+<<<<<<< HEAD
                             <a onClick={() => navigate('/')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+=======
+                            <a onClick={() => navigate('/thedangerPage')} class="mt-[2px] max-h-6 px-2 cursor-pointer rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+>>>>>>> 1752363dc63d5e138a577ac58579717663b708bb
                         </div>
                     </div>
                 </div>
@@ -121,7 +125,7 @@ const Anime = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Anime One Piece menceritakan perjalanan Luffy, seorang anak laki-laki yang bertemu bajak laut hebat bernama Shanks, dimana Luffy terinspirasi oleh kehebatan Shanks dan bermimpi suatu hari nanti ingin menjadi bajak laut. Kemudian Shanks menjanjikan Luffy untuk reuni di masa depan dan memberikan topi jeraminya.</p>
                         <div class=" mt-4 flex justify-between">
-                            <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a onClick={() => navigate('/onepiecePage')} class="mt-[2px] max-h-6 px-2 cursor-pointer rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
