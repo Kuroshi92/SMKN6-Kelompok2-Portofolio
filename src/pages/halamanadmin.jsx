@@ -12,23 +12,42 @@ export default function Sidebar(){
     ];
 
     return (
-    <div className="h-screen border-r border-gray-200 w-50 px-9 text-white">
-        <div className="flex flex-row items-center">
-            <img src={logo} alt="logorpl" className="w-20 h-20"></img>
-            <h1 className="px-5 text-white  text-2xl font-semibold">Anikor</h1>
+        <div className="w-full bg-slate-800">
+        <div className="h-screen border-r bg-slate-800 border-gray-200 w-64 px-9">
+            <div className="flex flex-row pt-7 items-center mb-10">
+                <img src={logo} alt="logorpl" className="w-20 h-20"></img>
+                <h2 className="self-center text-2xl font-semibold text-white px-3">Anikor</h2>
+            </div>
+            <div>
+            <hr class="bg-gray-600 w-50"></hr>
+                <ul>
+                {
+                    menu.map((val, index) => {
+                        return (
+                        <li key={index} className="mb-[25px] text-white flex flex-row items-center hover:bg-zinc-600 py-8 w-full cursor-pointer">
+                            <div className="mr-5">{val.icon}</div>
+                           <div>{val.name}</div> 
+                          </li>
+                        );
+                        
+                    })}
+                     <hr class="bg-gray-600 w-50"></hr>
+                </ul>
+              
+            </div>
         </div>
-        <div className="pt-10">
-            <ul>
-                {menu.map((val, index) => {
-                 return (
-                     <li key={index} className="mb-7 flex flex-row items-center">
-                      <div className="mr-5">{val.icon}</div>
-                      <div>{val.name}</div>
-                 </li>
-                );
-                })}
-            </ul>
+        <div className="w-full min-h-screen  flex-row">
+                    <Sidebar/>
+                    <section className="flex-1 text-white w-64">content left</section>
+                    <section className="flex-1">content right</section>
+                </div>
+            
         </div>
-    </div>
+        
+                
     );
 }
+
+
+
+
