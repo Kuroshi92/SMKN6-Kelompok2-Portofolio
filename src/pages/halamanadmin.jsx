@@ -1,24 +1,24 @@
 import React from "react";
 import logo from '../asset/logorpl2.png';
-import {AiOutlineTime,}from "react-icons/ai";
-import {HiOutlineUserGroup, HiUserGroup}from "react-icons/hi";
+import {MdOutlineGroups,}from "react-icons/md";
+import {FaVimeoV,}from "react-icons/fa";
+import {FaPlayCircle,}from "react-icons/fa";
 
 export default function Sidebar(){
     const menu = [
-        { name: "Team", icon: <AiOutlineTime/> },
-        { name: "Anime", icon: <HiOutlineUserGroup/> },
-        { name: "Drakor", icon: <HiUserGroup/> },
+        { name: "Team", icon: <MdOutlineGroups/> },
+        { name: "Anime", icon: <FaPlayCircle/> },
+        { name: "Drakor", icon: <FaVimeoV/> },
     ];
 
     return (
-    <div className="h-screen border-r border-gray-200 w-64 px-9">
+    <div className="h-screen border-r border-gray-200 w-50 px-9 text-white">
         <div className="flex flex-row items-center">
-            <img src={logo} alt="logorpl" className="w-9 h-9"></img>
-            <div>Anikor</div>
+            <img src={logo} alt="logorpl" className="w-20 h-20"></img>
+            <h1 className="px-5 text-white  text-2xl font-semibold">Anikor</h1>
         </div>
-        <div>
+        <div className="pt-10">
             <ul>
-            <div className="mb-4">Menu</div>
                 {menu.map((val, index) => {
                  return (
                      <li key={index} className="mb-7 flex flex-row items-center">
