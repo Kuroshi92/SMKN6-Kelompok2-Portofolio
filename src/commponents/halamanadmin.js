@@ -12,7 +12,7 @@ export default function Sidebar(){
     ];
 
     return (
-        <div className="w-full bg-slate-800">
+        
         <div className="h-screen border-r bg-slate-800 border-gray-200 w-64 px-9">
             <div className="flex flex-row pt-7 items-center mb-10">
                 <img src={logo} alt="logorpl" className="w-20 h-20"></img>
@@ -36,13 +36,8 @@ export default function Sidebar(){
               
             </div>
         </div>
-        <div className="w-full min-h-screen  flex-row">
-                    <Sidebar/>
-                    <section className="flex-1 text-white w-64">content left</section>
-                    <section className="flex-1">content right</section>
-                </div>
-            
-        </div>
+     
+       
         
                 
     );
