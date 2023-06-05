@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"
 import logo from '../asset/logorpl2.png';
 import {MdOutlineGroups,}from "react-icons/md";
 import {FaVimeoV,}from "react-icons/fa";
@@ -10,6 +11,13 @@ export default function Sidebar(){
         { name: "Anime", icon: <FaPlayCircle/> },
         { name: "Drakor", icon: <FaVimeoV/> },
     ];
+    const navigate = useNavigate()
+    window.addEventListener("scroll", function() {
+      var navbar = document.querySelector(".navbar");
+      navbar.classList.toggle("fixed", window.scrollY > 0);
+      navbar.classList.toggle("w-full", window.scrollY > 0);
+    });
+    
 
     return (
         
@@ -35,6 +43,24 @@ export default function Sidebar(){
                 </ul>
               
             </div>
+            <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none  hover:bg-gray-900 group">
+              <div class ="w-5 h-1 bg-gray-600 mb-1"></div>
+              <div class ="w-5 h-1 bg-gray-600 mb-1"></div>
+              <div class ="w-5 h-1 bg-gray-600 "></div>
+              <div class="absolute top-5 -right-full h-100 w-6/12 bg-gray-900 text-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
+                <ul class="fkex flex-col items-center w-full text-base pt-0">  
+                  <li class="hover:bg-zinc-600 py-8 px-6 w-full cursor-pointer" onClick={() => navigate('/')}>Home</li>
+                  <hr class="bg-gray-600 w-full"></hr>
+                  <li class="hover:bg-zinc-600 py-8 px-6 w-full cursor-pointer" onClick={() => navigate('/team')}>Team</li>
+                  <hr class="bg-gray-600 w-full"></hr>
+                  <li class="hover:bg-zinc-600 py-8 px-6 w-full cursor-pointer" onClick={() => navigate('/anime')}>Anime</li>
+                  <hr class="bg-gray-600 w-full"></hr>
+                  <li class="hover:bg-zinc-600 py-8 px-6 w-full cursor-pointer" onClick={() => navigate('/drakor')}>Drakor</li>
+                  <hr class="bg-gray-600 w-full"></hr>
+                </ul>
+              </div>
+            </button>
+            
         </div>
      
        
