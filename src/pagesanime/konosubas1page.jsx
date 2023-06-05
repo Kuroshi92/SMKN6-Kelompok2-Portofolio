@@ -25,7 +25,7 @@ const Konosubapage = () => {
         />
 
         {/* Gambar di sebelah kiri */}
-        <div className="relative z-10 w-[590px] bg-slate-900 sm:py-[5px] mt-[0.6px] bg-opacity-50">
+        <div className="relative z-10 w-[390px] bg-slate-900 sm:py-[7.5 px] mt-[0.6px] bg-opacity-50">
           <img
             className="mx-auto ml-28 rounded-lg shadow-lg sm:max-w-md w-56"
             src={
@@ -36,7 +36,7 @@ const Konosubapage = () => {
         </div>
 
         {/* Informasi di sebelah kanan */}
-        <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[24px]">
+        <div className="relative z-10 flex flex-col w-[60%] py-20 pl-10 bg-slate-900 bg-opacity-50 sm:py-[24px]">
           <h1 className="text-3xl font-bold -mt-50 text-white">
             Kono Subarashii Sekai ni Shukufuku wo! Season 1
           </h1>

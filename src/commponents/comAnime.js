@@ -11,7 +11,7 @@ function Anime(){
         <div>
             {/* Bagian Content Review Anime */}
 
-            <div> 
+            <div className='px-2'> 
                 <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-2 my-2 rounded ">
                     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                         <div class="flex items-center">
@@ -31,17 +31,18 @@ function Anime(){
                 </nav>
                 <div class="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth py-4">
                     <div class="flex items-center -mx-1">
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8  mr-5 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
-                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10" onClick={() => navigate('/konosubapage')}>
                                     <img className=" cursor-pointer object-fill w-23 h-48" src={konosuba} alt="Konosuba/img"/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Konosuba!</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold" onClick={() => navigate('/konosubapage')}>Konosuba!</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
-                                        <li className="cursor-pointer hover:text-blue-300">Harem</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Magic</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Isekai</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Adventure</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Fantasy</li> <p>&nbsp;/&nbsp;</p>
                                         <li className="cursor-pointer hover:text-blue-300">Komedi</li>
                                     </ul>
                                 </div>
@@ -49,13 +50,13 @@ function Anime(){
                             
                             
                         </div>
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mr-5 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
-                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10" onClick={() => navigate('/Alicepage')}>
                                     <img className=" cursor-pointer object-fill w-23 h-48" src={Alice} alt="Alice/img"/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Alice gear aegis expansion</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold" onClick={() => navigate('/Alicepage')}>Alice gear aegis expansion</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
                                         <li className="cursor-pointer hover:text-blue-300">Action</li> <p>&nbsp;/&nbsp;</p>
@@ -64,51 +65,57 @@ function Anime(){
                                 </div>
                             </div>
                       </div>
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mr-5 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
-                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10" onClick={() => navigate('/SmartphonePage')}>
                                     <img className=" cursor-pointer object-fill w-23 h-48" src={smartphone2} alt="smartphone2/img"/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">In another world with my smartphone 2</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold" onClick={() => navigate('/SmartphonePage')}>In another world with my smartphone 2</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
                                         <li className="cursor-pointer hover:text-blue-300">Adventure</li> <p>&nbsp;/&nbsp;</p>
                                         <li className="cursor-pointer hover:text-blue-300">Comedy</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Romance</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Thriller</li>
+                                        <li className="cursor-pointer hover:text-blue-300">Romance</li>
                                     </ul>
                                 </div>
                             </div>
                             
                             
                         </div>
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4  mr-5 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
-                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10" onClick={() => navigate('/thedangerPage')}>
                                     <img className=" cursor-pointer object-fill w-23 h-48" src={thedangers} alt="thedangers/img"/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">The dangers in my heart!</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold" onClick={() => navigate('/thedangerPage')}>The dangers in my heart!</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
-                                        <li className="cursor-pointer hover:text-blue-300">Comedy</li> 
+                                        <li className="cursor-pointer hover:text-blue-300">Romance</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Comedy</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">School</li>
                                     </ul>
                                 </div>
                             </div>
                             
                             
                         </div>
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mr-5 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
-                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
-                                    <img className=" cursor-pointer object-fill w-23 h-48" src={Onepiece} alt="Onepiece/img"/>
+                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10 " onClick={() => navigate('/onepiecePage')}>
+                                    <img className=" cursor-pointer object-fill w-96 h-48" src={Onepiece} alt="Onepiece/img"/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">One Piece</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold" onClick={() => navigate('/onepiecePage')}>One Piece</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
-                                        <li className="cursor-pointer hover:text-blue-300">Adventure</li> <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Action</li> 
+                                        <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Adventure</li> 
+                                        <p>&nbsp;/&nbsp;</p>
+                                        <li className="cursor-pointer hover:text-blue-300">Comedy</li> 
+                                        <p>&nbsp;/&nbsp;</p>
                                         <li className="cursor-pointer hover:text-blue-300">Fantasy</li> 
                                     </ul>
                                 </div>
@@ -116,24 +123,7 @@ function Anime(){
                             
                             
                         </div>
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
-                            <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
-                                <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
-                                    <img className=" cursor-pointer object-fill w-23 h-48" src={dmnslyr} alt="dmnslyr/img"/>
-                                </div>
-                                <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Demon slayer :kimetsu no yaiba</h2>
-                                    <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
-                                    <ul className="flex text-gray-900 py-1">
-                                        <li className="cursor-pointer hover:text-blue-300">Adventure</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Fantasy</li> <p>&nbsp;/&nbsp;</p>
-                                        <li className="cursor-pointer hover:text-blue-300">Martial</li> 
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
+
                         
 
                     </div>

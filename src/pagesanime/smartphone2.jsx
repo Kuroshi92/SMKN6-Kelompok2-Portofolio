@@ -25,7 +25,7 @@ const SmartphonePage = () => {
         />
 
         {/* Gambar di sebelah kiri */}
-        <div className="relative z-10 w-[590px] bg-slate-900 sm:py-[5px] mt-[0.9px] mb-[0.8px] bg-opacity-50">
+        <div className="relative z-10 w-[390px] bg-slate-900 sm:py-[24px] mt-[1px] mb-[0.8px] bg-opacity-50">
           <img
             className="mx-auto ml-28 rounded-lg shadow-lg sm:max-w-md w-56"
             src={
@@ -36,7 +36,7 @@ const SmartphonePage = () => {
         </div>
 
         {/* Informasi di sebelah kanan */}
-        <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[32px]">
+        <div className="relative z-10 flex flex-col w-[60%] py-20 pl-20 bg-slate-900 bg-opacity-50 sm:py-[32px]">
           <h1 className="text-3xl font-bold -mt-50 text-white">
           Isekai wa Smartphone to Tomo ni Season 2
           </h1>
@@ -49,9 +49,11 @@ const SmartphonePage = () => {
               Genre:
             </span>
             <span className="flex text-lg font-semibold text-gray-200">
-              <ul className="cursor-pointer hover:text-blue-400">Action</ul>
+              <ul className="cursor-pointer hover:text-blue-400">Adventure</ul>
               &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">SCI-FI</ul>
+              <ul className="cursor-pointer hover:text-blue-400">Romance</ul>
+              &nbsp;/&nbsp;
+              <ul className="cursor-pointer hover:text-blue-400">Comedy</ul>
               
             </span>
           </div>

@@ -25,7 +25,7 @@ const TheDangerPage = () => {
         />
 
         {/* Gambar di sebelah kiri */}
-        <div className="relative z-10 w-[590px] bg-slate-900 sm:py-[5px] mt-[0.9px] mb-[0.8px] bg-opacity-50">
+        <div className="relative z-10 w-[390px] bg-slate-900 sm:py-[25.5px] mt-[1px] mb-[0.8px] bg-opacity-50">
           <img
             className="mx-auto ml-28 rounded-lg shadow-lg sm:max-w-md w-56"
             src={
@@ -36,7 +36,7 @@ const TheDangerPage = () => {
         </div>
 
         {/* Informasi di sebelah kanan */}
-        <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[33px]">
+        <div className="relative z-10 flex flex-col w-[60%] py-20 pl-20 bg-slate-900 bg-opacity-50 sm:py-[33px]">
           <h1 className="text-3xl font-bold -mt-50 text-white">
           Boku no Kokoro no Yabai Yatsu
           </h1>
@@ -54,10 +54,6 @@ const TheDangerPage = () => {
               <ul className="cursor-pointer hover:text-blue-400">Comedy</ul>
               &nbsp;/&nbsp;
               <ul className="cursor-pointer hover:text-blue-400">School</ul>
-              &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">Shounen</ul>
-              &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">Slice Of Life</ul>
               
             </span>
           </div>

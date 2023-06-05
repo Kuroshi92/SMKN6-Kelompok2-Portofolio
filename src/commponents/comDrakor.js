@@ -14,7 +14,7 @@ function Drakor(){
 
             <div> 
                 <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-2 my-2 rounded">
-                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <div class="max-w-screen-xl flex flex-wrap  items-center justify-between mx-auto p-4">
                         <div class="flex items-center">
                             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Drakor Riview</span>
                         </div>
@@ -32,7 +32,7 @@ function Drakor(){
                 </nav>
                 <div class="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth py-4">
                     <div class="flex items-center -mx-1">
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 mr-5 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
                                     <img className=" cursor-pointer object-fill w-96 h-48" src={school2017} alt="school2017/img"/>
@@ -50,7 +50,7 @@ function Drakor(){
                             
                             
                         </div>
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 mr-5 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
                                     <img className=" cursor-pointer object-fill w-23 h-48" src={whoareyouschool2015} alt="whoareyouschool2015/img"/>
@@ -67,7 +67,7 @@ function Drakor(){
                                 </div>
                             </div>
                       </div>
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 mr-5 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
                                     <img className=" cursor-pointer object-fill w-23 h-48" src={yumicell} alt="yumicell/img"/>
@@ -85,7 +85,7 @@ function Drakor(){
                             
                             
                         </div>
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 mr-5 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
                                     <img className=" cursor-pointer object-fill w-23 h-48" src={truebeauty} alt="truebeauty/img"/>
@@ -102,7 +102,7 @@ function Drakor(){
                             
                             
                         </div>
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 mr-5 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
                                     <img className=" cursor-pointer object-fill w-23 h-48" src={whatswrongwithsecretarykim} alt="What'sWrongWithSecretaryKim/img"/>
@@ -119,7 +119,7 @@ function Drakor(){
                             
                             
                         </div>
-                        <div class="w-[340px] md:w-1/2 lg:w-1/4 px-4 mb-8 z-10">
+                        <div class="w-[340px] md:w-1/2 lg:w-1/4 mr-5 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
                                     <img className=" cursor-pointer object-fill w-23 h-48" src={theuncannycounter} alt="The-Uncanny-Counter/img"/>

@@ -20,9 +20,11 @@ const Anime = () => {
                         <h2 class="block mt-1 text-lg leading-tight font-medium text-black">Kono Subarashii sekai ni shukufuku wo! S1</h2>
                         <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
                         <ul className="flex py-2 text-white">
-                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Harem</li>
+                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Isekai</li>
                             <p className="text-black">&nbsp;/&nbsp;</p>
-                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Magic</li>
+                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Adventure</li>
+                            <p className="text-black">&nbsp;/&nbsp;</p>
+                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Fantasy</li>
                             <p className="text-black">&nbsp;/&nbsp;</p>
                             <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Comedy</li>
                         </ul>
@@ -72,8 +74,6 @@ const Anime = () => {
                             <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Comedy</li>
                             <p className="text-black">&nbsp;/&nbsp;</p>
                             <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Romance</li>
-                            <p className="text-black">&nbsp;/&nbsp;</p>
-                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Thriller</li>
                         </ul>
 
                         </div>
@@ -93,7 +93,12 @@ const Anime = () => {
                         <h2 class="block mt-1 text-lg leading-tight font-medium text-black">The Dangers in My Heart</h2>
                         <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
                         <ul className="flex py-2 text-white">
+                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Romance</li>
+                            <p className="text-black">&nbsp;/&nbsp;</p>
                             <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Comedy</li>
+                            <p className="text-black">&nbsp;/&nbsp;</p>
+                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">School</li>
+                            
                         </ul>
 
                         </div>
@@ -113,9 +118,14 @@ const Anime = () => {
                         <h2 class="block mt-1 text-lg leading-tight font-medium text-black">One Piece</h2>
                         <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
                         <ul className="flex py-2 text-white">
+                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Action</li>
+                            <p className="text-black">&nbsp;/&nbsp;</p>
                             <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Adventure</li>
                             <p className="text-black">&nbsp;/&nbsp;</p>
+                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Comedy</li>
+                            <p className="text-black">&nbsp;/&nbsp;</p>
                             <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Fantasy</li>
+                            
                             </ul>
 
                         </div>
