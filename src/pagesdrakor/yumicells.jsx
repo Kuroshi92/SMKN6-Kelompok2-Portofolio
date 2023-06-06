@@ -1,13 +1,13 @@
 import Nav from "../commponents/navbar";
 import "../index.css";
 import "../App.css";
-import School from "../asset/schoolll.jpeg";
+import School from "../asset/yumi.jpg";
 import { useState } from "react";
 import React from "react";
-import { dataschool } from "../commponents/dataschool2017";
+import { dataschool } from "../commponents/datayumicells";
 import Footer from "../commponents/footer";
 
-const Schoolpage = () => {
+const Yumicellspage = () => {
   const [showMore, setShowMore] = useState(false);
 
   const handleShowMore = () => {
@@ -25,11 +25,11 @@ const Schoolpage = () => {
         />
 
         {/* Gambar di sebelah kiri */}
-        <div className="relative z-10 w-[590px] bg-slate-900 sm:py-[5px] mt-[0.6px] bg-opacity-50">
+        <div className="relative z-10 w-[590px] bg-slate-900 sm:py-[4.6px] mt-[0.6px] bg-opacity-50">
           <img
             className="mx-auto ml-28 rounded-lg shadow-lg sm:max-w-md w-56"
             src={
-              "https://bacaterus.com/wp-content/uploads/2022/02/School-2017_.webp"
+              "https://th.bing.com/th/id/OIP.TER-0HMhbo_cCv2NePD9ZQHaKl?pid=ImgDet&rs=1"
             }
             alt="Movie Poster"
           />
@@ -38,7 +38,7 @@ const Schoolpage = () => {
         {/* Informasi di sebelah kanan */}
         <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[33px]">
           <h1 className="text-3xl font-bold -mt-50 text-white">
-          School 2017
+          Yumi's Cells 1
           </h1>
           <div className="flex items-center mt-2 mb-2">
             <span className="text-lg font-semibold text-gray-200 mr-2">
@@ -47,11 +47,9 @@ const Schoolpage = () => {
             <span className="flex text-lg font-semibold text-gray-200">
               <ul className="cursor-pointer hover:text-blue-400">Comedy</ul>
               &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">Coming Of Age</ul>
+              <ul className="cursor-pointer hover:text-blue-400">Drama</ul>
               &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">Romance</ul>
-              &nbsp;/&nbsp;
-              <ul className="cursor-pointer hover:text-blue-400">Teen</ul>
+              <ul className="cursor-pointer hover:text-blue-400">Pychological</ul>
               
             </span>
           </div>
@@ -61,11 +59,11 @@ const Schoolpage = () => {
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
             <span className="mr-2">Studio:</span>
-            <span className="text-blue-200">Korea Selatan</span>
+            <span className="text-blue-200">Korea Studio Dragon</span>
           </div>
           <div className="flex items-center text-white text-lg font-semibold mb-1">
-            <span className="mr-2">Penulis:</span>
-            <span className="text-blue-200">Park Jin-Suk, Jung Chan-Mi, Kim Seung-Won</span>
+            <span className="mr-2">Sutradra:</span>
+            <span className="text-blue-200">belum diketahui</span>
           </div>
           <div className="pt-9">
             <button
@@ -87,7 +85,7 @@ const Schoolpage = () => {
                   d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                 ></path>
               </svg>
-              <a href="https://youtu.be/2CfbtUg98IU">Tonton Cuplikan</a>
+              <a href="https://youtu.be/50YHSCE0D_U" target="_blank">Tonton Cuplikan</a>
             </button>
           </div>
         </div>
@@ -104,20 +102,17 @@ const Schoolpage = () => {
             } overflow-hidden`}
           >
             <br />
-            School 2017 mengisahkan tentang kehidupan siswa sekolah menengah atas, yang berusaha mengatasi stres dalam belajar.
-            Protagonis utamanya adalah Ra Eun-Ho (Kim Se-Jeong), seorang gadis 18 tahun yang ceria dan baik hati.
+            Yumi's Cells" adalah drama Korea yang diadaptasi dari webtoon populer dengan judul yang sama. 
+            Drama ini mengikuti kehidupan seorang wanita bernama Yumi (diperankan oleh Kim Go Eun) dan menceritakan kisahnya melalui sudut pandang sel-sel dalam otaknya. 
             <br />
+            Yumi adalah seorang karyawan berusia 32 tahun yang bekerja keras dan menjalani kehidupan sehari-hari yang rutin. Drama ini menggambarkan perjalanan emosional dan psikologis Yumi dalam menghadapi berbagai situasi dalam kehidupannya.
+            Setiap peristiwa dan pengalaman yang dialami Yumi direpresentasikan oleh sel-sel yang ada dalam otaknya, yang memiliki kepribadian dan karakteristik unik.
             <br />
-            Ia memiliki mimpi menjadi seniman webtoon, tapi terjebak dalam pencarian pembuat onar misterius di sekolah, yang disebut 'Siswa X'.
-            Ketika dituduh sebagai Siswa X, mimpinya untuk kuliah di jurusan seni terancam karena ia harus dikeluarkan
+            Melalui sudut pandang sel-sel ini, penonton dapat melihat bagaimana Yumi merespons, memproses, dan menghadapi berbagai peristiwa dalam kehidupannya,
+            termasuk pekerjaan, persahabatan, dan cinta. Drama ini menggali tema-tema seperti pertumbuhan pribadi, perubahan, dan belajar menerima diri sendiri.
             <br />
-            <br />
-            Hyun Tae-Woon (Kim Jung-Hyun) adalah putra direktur sekolah yang menikmati masa mudanya tetapi menyembunyikan bekas luka yang dalam.
-            Sementara Song Dae-Hwi (Jang Dong-Yoon) adalah siswa cerdas yang selalu menempati peringkat 1. <br />
-            <br />
-            <span className="font-bold">
-            Namun, ia berasal dari keluarga miskin dan terancam tidak bisa melanjutkan pendidikan di universitas impiannya
-            </span>
+            "Yumi's Cells" menawarkan penggambaran yang unik dan menghibur tentang kehidupan sehari-hari seorang wanita dan perjalanan emosionalnya. 
+            Drama ini mengeksplorasi berbagai aspek kehidupan manusia dengan sentuhan komedi, romantis, dan mengharukan.
           </p>
           <button
             onClick={handleShowMore}
@@ -160,4 +155,4 @@ const Schoolpage = () => {
     </div>
   );
 };
-export default Schoolpage;
+export default Yumicellspage;

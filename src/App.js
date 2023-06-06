@@ -13,6 +13,9 @@ import SchoolPage from './pagesdrakor/school';
 import TheDangerPage from './pagesanime/TheDangerMyHeart';
 import OnePiecePage from './pagesanime/OnePiece';
 
+import Whoarepage from './pagesdrakor/WhoAreYouSchool2015';
+import Yumicellspage from './pagesdrakor/yumicells';
+
 
 function App() {
   
@@ -27,13 +30,19 @@ function App() {
           <Route path='/anime' element={<Anime/>}/>
           <Route path='/drakor' element={<Drakor/>}/>
           <Route path='/login' element={<Login/>}/>
-          <Route path='/konosubapage' element={<KonosubaPage/>}/>
           <Route path='/adminpage' element={<HomeAdmin/>}/>
+
+          //anime
+          <Route path='/konosubapage' element={<KonosubaPage/>}/>
           <Route path='/alicepage' element={<AlicePage/>}/>
           <Route path='/smartphonepage' element={<SmartphonePage/>}/>
-          <Route path='/schoolpage' element={<SchoolPage/>}/>
           <Route path='/thedangerpage' element={<TheDangerPage/>}/>
           <Route path='/onepiecepage' element={<OnePiecePage/>}/>
+
+          //drakor
+          <Route path='/schoolpage' element={<SchoolPage/>}/>
+          <Route path='/whoarepage' element={<Whoarepage/>}/>
+          <Route path='/yumicellspage' element={<Yumicellspage/>}/>
 
         </Routes>
       </Router>

@@ -35,29 +35,5 @@ export const dataschool = [
       peran: 'Byeong-gyu',
       image: 'https://img1.ak.crunchyroll.com/i/spire4/e29bbc34b895c20160775e2ad1373b0c1583366454_full.jpg',
     },
-    {
-      id: "7",
-      name: 'Kim Min Kyu',
-      peran: 'Kim Min Kyu',
-      image: 'https://th.bing.com/th/id/R.d9fbb13049aa5f4dc5b528b2fd03c7d7?rik=jOV2SvGycu2NDg&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fkonosuba%2fimages%2fe%2fef%2fVanir_ani.png%2frevision%2flatest%3fcb%3d20161216060807&ehk=msONH1f7ZlTqLeCeIMSS5%2bpR3lRqWPEI8e3iu825gic%3d&risl=&pid=ImgRaw&r=0',
-    },
-    {
-      id: "8",
-      name: 'Kim Hee Jung',
-      peran: 'Cha Song Joo',
-      image: 'https://th.bing.com/th/id/R.d9fbb13049aa5f4dc5b528b2fd03c7d7?rik=jOV2SvGycu2NDg&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fkonosuba%2fimages%2fe%2fef%2fVanir_ani.png%2frevision%2flatest%3fcb%3d20161216060807&ehk=msONH1f7ZlTqLeCeIMSS5%2bpR3lRqWPEI8e3iu825gic%3d&risl=&pid=ImgRaw&r=0',
-    },
-    {
-      id: "9",
-      name: 'Lee Da Wit',
-      peran: 'Park Min Joon',
-      image: 'https://th.bing.com/th/id/R.d9fbb13049aa5f4dc5b528b2fd03c7d7?rik=jOV2SvGycu2NDg&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fkonosuba%2fimages%2fe%2fef%2fVanir_ani.png%2frevision%2flatest%3fcb%3d20161216060807&ehk=msONH1f7ZlTqLeCeIMSS5%2bpR3lRqWPEI8e3iu825gic%3d&risl=&pid=ImgRaw&r=0',
-    },
-    {
-      id: "10",
-      name: 'Kim Bo-ra',
-      peran: 'Seo Young Eun',
-      image: 'https://th.bing.com/th/id/R.d9fbb13049aa5f4dc5b528b2fd03c7d7?rik=jOV2SvGycu2NDg&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fkonosuba%2fimages%2fe%2fef%2fVanir_ani.png%2frevision%2flatest%3fcb%3d20161216060807&ehk=msONH1f7ZlTqLeCeIMSS5%2bpR3lRqWPEI8e3iu825gic%3d&risl=&pid=ImgRaw&r=0',
-    },
     
   ];    

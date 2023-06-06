@@ -54,15 +54,13 @@ const Drakor = () => {
                             <p className="text-black">&nbsp;/&nbsp;</p>
                             <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Mystery</li>
                             <p className="text-black">&nbsp;/&nbsp;</p>
-                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Romance</li>
-                            <p className="text-black">&nbsp;/&nbsp;</p>
-                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">Youth</li>
+                            <li className="cursor-pointer bg-cyan-800 rounded-md px-2 hover:text-blue-400 text-sm">School</li>
                         </ul>
 
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Lee Eun Bi dan Go Eun Byul adalah saudara kembar yang hidup terpisah. Suatu saat Eun Byul menghilang secara misterius, sedangkan Lee Eun Bi ditemukan di pinggir laut. Eun Bi lalu menjalani hidup sebagai Eun Byul dan terlibat kisah asmara segitiga di sekolahnya.</p>
                         <div class=" mt-4 flex justify-between">
-                            <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a onClick={() => navigate('/whoarepage')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                             <a href="https://youtu.be/YoqXPE6qTzo" target="_blank">
                             <button  type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
                                 <svg className="w-[20px] h-[24px] mt-[2px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -95,7 +93,7 @@ const Drakor = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Yumi adalah seorang wanita pekerja kantoran biasa. Drama ini memperlihatkan bagaimana sel-sel dalam otak Yumi bereaksi terhadap apa yang dialami oleh Yumi, khususnya kisah cintanya dimana sel cinta Yumi sempat koma karena patah hati.</p>
                         <div class=" mt-4 flex justify-between">
-                            <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a onClick={() => navigate('/yumicellspage')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                             <a href="https://youtu.be/50YHSCE0D_U" target="_blank">
                             <button  type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
                                 <svg className="w-[20px] h-[24px] mt-[2px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
