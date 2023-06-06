@@ -19,12 +19,12 @@ function Drakor(){
                             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Drakor Riview</span>
                         </div>
                         <button onClick={() => navigate('/drakor')} data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3  rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                            <button className='bg-blue-400 rounded p-1 shadow-lg shadow-cyan-500/50' >See All</button>
+                            <button className='bg-blue-400 rounded p-1 shadow-lg shadow-cyan-500/50' onClick={() => navigate('/drakor')}>See All</button>
                         </button>
                         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700" onClick={() => navigate('/drakor')}>
                                 <li>
-                                    <button href="#" className='bg-cyan-500 rounded p-1 shadow-lg shadow-cyan-500/50'>See All</button>
+                                    <button  className='bg-cyan-500 rounded p-1 shadow-lg shadow-cyan-500/50' onClick={() => navigate('/drakor')}>See All</button>
                                 </li>
                             </ul>
                         </div>
@@ -35,10 +35,10 @@ function Drakor(){
                         <div class="w-[340px] md:w-1/2 lg:w-1/4 mr-5 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
-                                    <img className=" cursor-pointer object-fill w-96 h-48" src={school2017} alt="school2017/img"/>
+                                    <img className=" cursor-pointer object-fill w-96 h-48" src={school2017} alt="school2017/img" onClick={() => navigate('/schoolpage')}/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">School-2017</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold" onClick={() => navigate('/schoolpage')}>School-2017</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
                                         <li className="cursor-pointer hover:text-blue-300">Comedy</li> <p>&nbsp;/&nbsp;</p>
@@ -53,10 +53,10 @@ function Drakor(){
                         <div class="w-[340px] md:w-1/2 lg:w-1/4 mr-5 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
-                                    <img className=" cursor-pointer object-fill w-23 h-48" src={whoareyouschool2015} alt="whoareyouschool2015/img"/>
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={whoareyouschool2015} alt="whoareyouschool2015/img" onClick={() => navigate('/whoarepage')}/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Who Are You School 2015</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold" onClick={() => navigate('/whoarepage')}>Who Are You School 2015</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
                                         <li className="cursor-pointer hover:text-blue-300">Drama</li> <p>&nbsp;/&nbsp;</p>
@@ -70,10 +70,10 @@ function Drakor(){
                         <div class="w-[340px] md:w-1/2 lg:w-1/4 mr-5 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
-                                    <img className=" cursor-pointer object-fill w-23 h-48" src={yumicell} alt="yumicell/img"/>
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={yumicell} alt="yumicell/img" onClick={() => navigate('/yumicellspage')}/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">Yumi's Cells 1</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold" onClick={() => navigate('/yumicellspage')}>Yumi's Cells 1</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
                                         <li className="cursor-pointer hover:text-blue-300">Comedy</li> <p>&nbsp;/&nbsp;</p>
@@ -88,10 +88,10 @@ function Drakor(){
                         <div class="w-[340px] md:w-1/2 lg:w-1/4 mr-5 px-4 mb-8 z-10">
                             <div class="w-[326px] h-64 rounded overflow-hidden shadow-lg bg-white shadow-cyan-600/75">
                                 <div className="bg-indigo-300 max-h-fit max-w-fit cursor-pointer hover:scale-105 ease-in duration-300 z-10">
-                                    <img className=" cursor-pointer object-fill w-23 h-48" src={truebeauty} alt="truebeauty/img"/>
+                                    <img className=" cursor-pointer object-fill w-23 h-48" src={truebeauty} alt="truebeauty/img" onClick={() => navigate('/truebeautypage')}/>
                                 </div>
                                 <div className="px-2 py-2">
-                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold">TrueBeauty</h2>
+                                    <h2 className="cursor-pointer w-max hover:text-blue-300 font-bold" onClick={() => navigate('/truebeautypage')}>TrueBeauty</h2>
                                     <hr className="h-1 bg-gray-300 rounded dark:bg-gray-600"></hr>
                                     <ul className="flex text-gray-900 py-1">
                                         <li className="cursor-pointer hover:text-blue-300">Comedy</li> <p>&nbsp;/&nbsp;</p>
