@@ -15,7 +15,7 @@ import OnePiecePage from './pagesanime/OnePiece';
 
 import Whoarepage from './pagesdrakor/WhoAreYouSchool2015';
 import Yumicellspage from './pagesdrakor/yumicells';
-
+import Truebeautypage from './pagesdrakor/truebeauty';
 
 function App() {
   
@@ -43,6 +43,7 @@ function App() {
           <Route path='/schoolpage' element={<SchoolPage/>}/>
           <Route path='/whoarepage' element={<Whoarepage/>}/>
           <Route path='/yumicellspage' element={<Yumicellspage/>}/>
+          <Route path='/truebeautypage' element={<Truebeautypage/>}/>
 
         </Routes>
       </Router>

@@ -127,7 +127,7 @@ const Drakor = () => {
                         </div>
                         <p class="mt-2 text-gray-500 text-sm line-clamp-3">Setelah diintimidasi dan didiskriminasi karena penampilannya yang jelek, Ju-kyung yang merupakan seorang siswi SMA mengubah dirinya menjadi "dewi" yang cantik, dan dengan cepat menjadi populer setelah menguasai cara bermake-up melalui video tutorial online.</p>
                         <div class=" mt-4 flex justify-between">
-                            <a href="#" class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
+                            <a onClick={() => navigate('/truebeautypage')} class="mt-[2px] max-h-6 px-2  rounded text-white font-semibold bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700">Lihat Detail</a>
                             <a href="https://youtu.be/GqnQs5ybyq8" target="_blank">
                             <button  type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-1 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
                                 <svg className="w-[20px] h-[24px] mt-[2px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
