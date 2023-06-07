@@ -1,74 +1,109 @@
-import React from "react";
+import {useState} from 'react';
 import { useNavigate } from "react-router-dom"
 import logo from '../asset/logorpl2.png';
-import {MdOutlineGroups,}from "react-icons/md";
-import {FaVimeoV,}from "react-icons/fa";
-import {FaPlayCircle,}from "react-icons/fa";
+import {
+  BsArrowLeftShort,
+  BsSearch,
+  BsChevronDown,
+  BsFillImageFill,
+  BsReverseLayoutTextSidebarReverse,
+  BsPerson,
+ } from "react-icons/bs";
+import { 
+  AiOutlineBarChart,
+  AiOutlineFileText,
+  AiOutlineLogout,
+  AiOutlineMail,
+  AiOutlineSetting,
+ } from "react-icons/ai";
+import { RiDashboardFill } from "react-icons/ri";
+import {MdOutlineGroups,} from 'react-icons/md';
+import {FaVimeoV,} from 'react-icons/fa';
+import {FaPlayCircle} from 'react-icons/fa';
 
-export default function Sidebar(){
-    const menu = [
-        { name: "Team", icon: <MdOutlineGroups/> },
-        { name: "Anime", icon: <FaPlayCircle/> },
-        { name: "Drakor", icon: <FaVimeoV/> },
-    ];
-    const navigate = useNavigate()
-    window.addEventListener("scroll", function() {
-      var navbar = document.querySelector(".navbar");
-      navbar.classList.toggle("fixed", window.scrollY > 0);
-      navbar.classList.toggle("w-full", window.scrollY > 0);
-    });
-    
 
-    return (
-        
-        <div className="h-screen border-r bg-slate-800 border-gray-200 w-64 px-9">
-            <div className="flex flex-row pt-7 items-center mb-10">
-                <img src={logo} alt="logorpl" className="w-20 h-20"></img>
-                <h2 className="self-center text-2xl font-semibold text-white px-3">Anikor</h2>
-            </div>
-            <div>
-            <hr class="bg-gray-600 w-50"></hr>
-                <ul>
-                {
-                    menu.map((val, index) => {
-                        return (
-                        <li key={index} className="mb-[25px] text-white flex flex-row items-center hover:bg-zinc-600 py-8 w-full cursor-pointer">
-                            <div className="mr-5">{val.icon}</div>
-                           <div>{val.name}</div> 
-                          </li>
-                        );
-                        
-                    })}
-                     <hr class="bg-gray-600 w-50"></hr>
-                </ul>
-              
-            </div>
-            <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none  hover:bg-gray-900 group">
-              <div class ="w-5 h-1 bg-gray-600 mb-1"></div>
-              <div class ="w-5 h-1 bg-gray-600 mb-1"></div>
-              <div class ="w-5 h-1 bg-gray-600 "></div>
-              <div class="absolute top-5 -right-full h-100 w-6/12 bg-gray-900 text-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
-                <ul class="fkex flex-col items-center w-full text-base pt-0">  
-                  <li class="hover:bg-zinc-600 py-8 px-6 w-full cursor-pointer" onClick={() => navigate('/')}>Home</li>
-                  <hr class="bg-gray-600 w-full"></hr>
-                  <li class="hover:bg-zinc-600 py-8 px-6 w-full cursor-pointer" onClick={() => navigate('/team')}>Team</li>
-                  <hr class="bg-gray-600 w-full"></hr>
-                  <li class="hover:bg-zinc-600 py-8 px-6 w-full cursor-pointer" onClick={() => navigate('/anime')}>Anime</li>
-                  <hr class="bg-gray-600 w-full"></hr>
-                  <li class="hover:bg-zinc-600 py-8 px-6 w-full cursor-pointer" onClick={() => navigate('/drakor')}>Drakor</li>
-                  <hr class="bg-gray-600 w-full"></hr>
-                </ul>
-              </div>
-            </button>
-            
+const Sidenav = () => {
+const [open, setOpen] = useState(true);
+const [submenuOpen, setSubmenuOpen] = useState(false);
+const Menus = [
+  { title : "Dashboard" },
+  { title : "Pages", icon: <AiOutlineFileText/> },
+  { title : "Media", spacing: true, icon: <BsFillImageFill/> },
+  {
+    title : "Projects",
+    icon: <BsReverseLayoutTextSidebarReverse/>,
+    submenu : true,
+    submenuItems : [
+      { title : "Anime" },
+      { title : "Drakor" },
+    ],
+  },
+  { title : "Analytics", icon: <AiOutlineBarChart/> },
+  { title : "Inbox", icon: <AiOutlineMail/> },
+  { title : "Profile", spacing: true, icon: <BsPerson/> },
+  { title : "Setting", icon: <AiOutlineSetting/> },
+  { title : "Logout", icon: <AiOutlineLogout/> },
+];
+
+  return(
+    <div className="flex">
+      <div className={`bg-slate-800 h-screen p-5 pt-8 ${open ? "w-72" : "w-20"} duration-300 relative`}>
+        <BsArrowLeftShort className={`bg-white  text-slate-800 text-3xl rounded-full absolute -right-3 top-9 border border-slate-800
+        cursor-pointer ${!open && "rotate-180"}`} onClick={() => setOpen (!open)}
+        />
+        <div className="inline-flex">
+        <img src={logo} class={`h-[41px] mr-3 rounded cursor-pointer block float-left duration-500 mr-2 ${!open && "rotate-[360deg]"}`} alt="Flowbite Logo"></img>
+        <h1 className={`text-white origin-left font-medium text-2xl duration-300 mt-1 ${!open && "scale-0"}`}>Anikor</h1>
         </div>
-     
-       
+      <div className={`flex items-center rounded-md bg-slate-500 mt-6 ${!open ? "px-2.5" : "px-4"} py-2`}>
+        <BsSearch className={`text-white text-lg block float-left cursor-pointer ${open && "mr-3"}`}/>
+
+        <input type={"search"} placeholder="Search" className={`text-base bg-transparent w-full text-white focus:outline-none ${!open && "hidden"}`}></input>
+      </div>
+
+      <ul className="pt-2">
+        {Menus.map((menu, index) => (
+          <>
+          <li key={index} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-slate-500
+          rounded-md ${menu.spacing ? "mt-9" : "mt-2"}`}>
+            <span className="text-2xl block float-left">
+              {menu.icon ? menu.icon :  <RiDashboardFill />}
+            </span>
+              <span className={`text-base font-medium flex-1 duration-200 ${!open && "hidden"}`}>
+                {menu.title}
+                </span>
+                {menu.submenu && open && (
+                  <BsChevronDown className={`${submenuOpen && "rotate-180"}`} onClick={() => 
+                    setSubmenuOpen(!submenuOpen)}/>
+                )}
+          </li>
+
+          {menu.submenu && submenuOpen && open && (
+            <ul>
+              {menu.submenuItems.map((submenuItem, index) => (
+                <li key={index} className="text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg-slate-500
+                rounded-md">
+                  {submenuItem.title}
+                </li>
+              ))}
+            </ul>
+          )}
+          </>
+        ))}
+      </ul>
+      </div>
+    
+      <div className="p-10 h-screen">
+        <h1 className="text-2xl font-semibold text-white">Welcome Back Aditya!</h1>
+        </div>
         
-                
-    );
+    </div>
+
+  );
 }
 
+
+export default Sidenav;
 
 
 

@@ -38,7 +38,7 @@ const Truebeautypage = () => {
         {/* Informasi di sebelah kanan */}
         <div className="relative z-10 flex flex-col w-[40%] py-20 bg-slate-900 bg-opacity-50 sm:py-[33px]">
           <h1 className="text-3xl font-bold -mt-50 text-white">
-          Yumi's Cells 1
+          True Beauty
           </h1>
           <div className="flex items-center mt-2 mb-2">
             <span className="text-lg font-semibold text-gray-200 mr-2">
