@@ -4,9 +4,7 @@ import Home from './pages/home';
 import Anime from './pages/anime';
 import Drakor from './pages/drakor';
 import Team from './pages/team';
-import Login from './pages/login';
 import KonosubaPage from './pagesanime/konosubas1page';
-import HomeAdmin from './commponents/halamanadmin2';
 import AlicePage from './pagesanime/alicegear';
 import SmartphonePage from './pagesanime/smartphone2';
 import SchoolPage from './pagesdrakor/school';
@@ -29,8 +27,6 @@ function App() {
           <Route path='/team' element={<Team/>}/>
           <Route path='/anime' element={<Anime/>}/>
           <Route path='/drakor' element={<Drakor/>}/>
-          <Route path='/login' element={<Login/>}/>
-          <Route path='/adminpage' element={<HomeAdmin/>}/>
 
           //anime
           <Route path='/konosubapage' element={<KonosubaPage/>}/>
